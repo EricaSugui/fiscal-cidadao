@@ -48,9 +48,17 @@
     embed {
     width: 100vw;
       position: fixed;
-      /* left: 0; */
       bottom: 53px;
       background-repeat: no-repeat;
+    }
+    
+    .photo {
+      /* width: 50%; */
+      background-image: url('/img/undraw_photos_1nui.png');
+      /* margin: auto; */
+    }
+    .photo-map {
+      margin: 10px;
     }
     #jsCpf {
       width: 250px;
