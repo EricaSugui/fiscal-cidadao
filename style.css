@@ -2,15 +2,27 @@
     font-family: 'Nunito Sans';
     box-sizing: border-box;
   }
-  
-  @media screen and (max-width: 599px) {
+  img,
+    object,
+    embed {
+    width: 100%;
+    max-height: 250px;
+      position: fixed;
+      left: 0;
+      bottom: 90px;
+      background-repeat: no-repeat;
+  }
+  @media screen and (max-width: 369px) {
+    * {
+      font-family: 'Nunito Sans';
+      box-sizing: border-box;
+    }
     body {
       margin: 0 auto;
       background-color: white;
     }
     .navbar {
         width: 100vw;
-        /* position: fixed; */
     }
     a:link {
       text-decoration: none;
@@ -22,17 +34,289 @@
       margin: 0 auto;
       text-align: center;
     }
-    .img {
+    .index-container {
+      position:fixed;
       width: 100vw;
+      padding-top: 20px;
+      padding-bottom: 0px;
+      /* padding-bottom: 60px; */
+      margin: 0 auto;
+      text-align: center;
+    }
+    img,
+    object,
+    embed {
+    width: 100vw;
       position: fixed;
-      left: 0;
-      bottom: 90px;
-      /* background-color: ; */
+      /* left: 0; */
+      bottom: 53px;
+      background-repeat: no-repeat;
+    }
+    #jsCpf {
+      width: 250px;
+      margin-bottom: 10px;
+      font-size: 25px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    h1.title {
+      margin-top: 10px;
+    }
+    h2 {
+      font-size: 20px;
+    }
+    h2.subtitle {
+      margin-top: 5px;
+    }
+    .numberGuesser {
+      display: none;
+      /* justify-content: center */
+    }
+    .rounds {
+      flex-direction: column;
+    }
+    .round-label {
+      font-size: 25px;
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+  
+    .guess {
+      min-width: 100px;
+      /* height: 25%; */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 6px;
+      margin: 10px 0;
+    }
+  
+    .guessing-area {
+        position: relative;
+        display: table;
+        height: 100%;
+        width: 100%;
+      /* min-width: 300px; */
+      margin-bottom: 10px;
+      /* padding: 5px; */
+    }
+  
+    .guess-title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      /* margin-bottom: 10px; */
+    }
+  
+    .guess-label {
+      font-size: 21px;
+      font-weight: 700;
+      margin: auto;
+    }
+  
+    .score-label {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0;
+    }
+  
+    .target-guess {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .tile-0 {
+      background-color: #490A3D;
+      color: white;
+  }
+    .tile-1 {
+        background-color: #3775A4;
+    }
+    .tile-2 {
+      background-color: #F5C62E;
+    }
+    .tile-3 {
+        background-color: #A147C2;
+      }
+      .tile-4 {
+        background-color: #2DA453;
+      }
+      .tile-5 {
+        background-color: #3775A4;
+      }
+      .tile-6 {
+        background-color: #F5C62E;
+      }
+  
+    .guess input {
+      /* height: 55px; */
+      width: 110px;
+      font-size: 50px;
+      text-align: center;
+      color: #490A3D;
+      font-weight: 700;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    
+    #target-number {
+      font-size: 60px;
+      color: #490A3D;
+    }
+  
+    .number-controls {
+      font-size: 0;
+      margin-bottom: 10px;
+    }
+  
+    .number-control {
+      border: none;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      font-weight: 700;
+      color: white;
+      cursor: pointer;
+      margin: 0 12px;
+      padding: 3px;
+    }
+  
+    .number-controls button[disabled] {
+      color: #dfdfdf;
+      cursor: default;
+    }
+  
+    .controls {
+      display: flex;
+      justify-content: space-around;
+    }
+    #guess{
+      height: 60px;
+    }
+    #computer-wins {
+      font-size: 30px;
+    }
+    #next-round {
+      width: 171px;
+      height: 50px;
+      font-size: 18px;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+  
+    .instructions-header {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 50px;
+    }
+  
+    .instructions-header h2 {
+      font-size: 30px;
+      font-weight: 700;
+    }
+  
+    .instructions {
+      background-color: #F8CA00;
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+    }
+  
+    .instruction {
+      width: 180px;
+      padding: 19px;
+      text-align: center;
+    }
+  
+    .instructions h3 {
+      font-size: 25px;
+      font-weight: 700;
+    }
+  
+    .instructions p {
+      font-size: 18px;
+    }
+  
+    .winning-text,
+    .winning-text[disabled] {
+      font-weight: 700;
+    }
+    .sobre {
+      margin-bottom: 50px;
+    }
+    .sobre p {
+      font-size: 18px;
+    }
+    .sobreButton {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .voltarButton {
+      margin: 70px 30px;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .footer {
+      position: fixed;
+      bottom:0;
+      left:0;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: #ececec;
+      background-color: #490A3D;
+      padding-top: 12px;
+    }
+  }
+  @media screen and (min-width: 370px ) {
+    body {
+      margin: 0 auto;
+      background-color: white;
+    }
+    .navbar {
+        width: 100vw;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    .index-container {
+      position:fixed;
+      width: 100vw;
+      padding-top: 20px;
+      padding: 5px;
+      /* padding-bottom: 0px; */
+      margin: 0 auto;
+      text-align: center;
+    }
+    .game-container {
+      width: 95vw;
+      padding-top: 20px;
+      padding-bottom: 60px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    img,
+    object,
+    embed {
+    width: 100vw;
+      position: fixed;
+      /* left: 0; */
+      bottom: 53px;
+      background-repeat: no-repeat;
     }
     #jsCpf {
       width: 250px;
       /* height: 60px; */
-      margin: 8px;
+      margin: 18px;
       font-size: 30px;
       text-align: center;
     }
