@@ -12,6 +12,9 @@
         width: 100vw;
         /* position: fixed; */
     }
+    a:link {
+      text-decoration: none;
+    }
     .game-container {
       width: 95vw;
       padding-top: 20px;
@@ -19,7 +22,20 @@
       margin: 0 auto;
       text-align: center;
     }
-  
+    .img {
+      width: 100vw;
+      position: fixed;
+      left: 0;
+      bottom: 90px;
+      background-color: ;
+    }
+    #jsCpf {
+      width: 250px;
+      /* height: 60px; */
+      margin: 8px;
+      font-size: 30px;
+      text-align: center;
+    }
     h1 {
       font-size: 30px;
       font-weight: 700;
@@ -101,6 +117,10 @@
       font-weight: 700;
       color: white;
     } */
+    .tile-0 {
+      background-color: #490A3D;
+      color: white;
+  }
     .tile-1 {
         background-color: #3775A4;
     }
