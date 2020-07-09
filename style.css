@@ -15,12 +15,12 @@
     .navbar {
         width: 100vw;
     }
-    .navbar-brand {
+    /* .navbar-brand {
       margin-left: 15px;
     }
     .navbar-toggler{
       margin: 0 10px;
-    }
+    } */
     a:link {
       text-decoration: none;
     }
@@ -306,12 +306,12 @@
     .navbar {
         width: 100vw;
     }
-    .navbar-brand {
+    /* .navbar-brand {
       margin: 0 15px;
     }
     .navbar-toggler{
       margin: 0 10px;
-    }
+    } */
     a:link {
       text-decoration: none;
     }
@@ -329,6 +329,13 @@
       padding-top: 20px;
       padding-bottom: 60px;
       margin: 0 auto;
+      text-align: center;
+    }
+    .sobre-container {
+      width: 95vw;
+      padding-top: 20px;
+      margin-bottom: 320px;
+      margin: 0 auto 200px 0;
       text-align: center;
     }
     img,
