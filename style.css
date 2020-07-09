@@ -2,16 +2,7 @@
     font-family: 'Nunito Sans';
     box-sizing: border-box;
   }
-  /* img,
-    object,
-    embed {
-    width: 100%;
-    max-height: 250px;
-      position: fixed;
-      left: 0;
-      bottom: 90px;
-      background-repeat: no-repeat;
-  } */
+  
   @media screen and (max-width: 369px) {
     * {
       font-family: 'Nunito Sans';
