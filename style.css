@@ -60,6 +60,10 @@
     .photo-map {
       margin: 10px;
     }
+    #mapholder {
+      width: 320px;
+      height: 350px;
+    }
     #jsCpf {
       width: 250px;
       margin-bottom: 10px;
@@ -321,6 +325,13 @@
       bottom: 53px;
       background-repeat: no-repeat;
     }
+    .photo-map {
+      margin: 10px;
+    }
+    #mapholder {
+      width: 356px;
+      height: 380px;
+    }
     #jsCpf {
       width: 250px;
       /* height: 60px; */
@@ -569,6 +580,17 @@
       max-width: 640px;
       margin: 0 auto;
       text-align: center;
+    }
+    .photo-map {
+      margin: 10px;
+    }
+    #mapholder {
+      width: 640px;
+      height: 380px;
+    }
+
+    .descreva {
+      padding-top: -100px;
     }
     .col-10 {
       max-width: 640px;
