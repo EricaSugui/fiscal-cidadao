@@ -24,6 +24,12 @@
     .navbar {
         width: 100vw;
     }
+    .navbar-brand {
+      margin-left: 15px;
+    }
+    .navbar-toggler{
+      margin: 0 10px;
+    }
     a:link {
       text-decoration: none;
     }
@@ -47,6 +53,7 @@
     embed {
       width: 70vw; 
       position: fixed;
+      left:50px;
       bottom: 53px;
       background-repeat: no-repeat;
     }
@@ -308,6 +315,12 @@
     .navbar {
         width: 100vw;
     }
+    .navbar-brand {
+      margin: 0 15px;
+    }
+    .navbar-toggler{
+      margin: 0 10px;
+    }
     a:link {
       text-decoration: none;
     }
@@ -332,7 +345,7 @@
     embed {
     width: 100vw;
       position: fixed;
-      /* left: 0; */
+      left: 0;
       bottom: 53px;
       background-repeat: no-repeat;
     }
@@ -429,7 +442,10 @@
     .tile-0 {
       background-color: #490A3D;
       color: white;
-  }
+    }
+    .verifica {
+      background-color: #490A3D;
+    }
     .tile-1 {
         background-color: #3775A4;
     }
