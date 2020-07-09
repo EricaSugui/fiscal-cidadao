@@ -2,7 +2,9 @@
     font-family: 'Nunito Sans';
     box-sizing: border-box;
   }
-  
+  #map {
+    width: 100%;
+  }
   @media screen and (max-width: 369px) {
     * {
       font-family: 'Nunito Sans';
