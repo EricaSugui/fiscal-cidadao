@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn2C_cOdYtu-oj3PKPwmFlMqtOP03EJHs"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBn2C_cOdYtu-oj3PKPwmFlMqtOP03EJHs&callback=initMap&libraries=&v=weekly"></script>
         <script>
             function chooseFile() {
                 $("#fileInput").click();
@@ -115,20 +115,24 @@
                 <input type="file" id="fileInput" name="fileInput" />
              </div>
              
-            <div class="row game-container justify-content-center">
-                    <button type="button" onclick="chooseFile();" class="col-5 btn tile-1 photo-map">Adicione uma fotografia</button>
+            <div class="row  justify-content-center">
+                    <button type="button" onclick="chooseFile();" class="col-5 btn tile-1 photo-map1">Adicione uma fotografia</button>
                 
-                <button type="button" onclick="getLocation();" class="col-5 btn tile-1 photo-map">Adicione a localização</button>
+                <button href="#mapholder" type="button" onclick="getLocation();" class="col-5 btn tile-1 photo-map2">Adicione a localização</button>
                     
             </div>
-            <div id="mapholder"></div>
+
             <div class="col btn tile-2 descreva">
                 
                 <label for="descreva">Insira mais detalhes:</label>
-                <textarea id="descreva" name="descreva" cols="30" rows="5" placeholder="Descreva mais detalhes aqui."></textarea>
+                <textarea id="descreva" name="descreva" cols="30" rows="3" placeholder="Descreva mais detalhes aqui."></textarea>
             </div>
 
-
+            <div id="box-toggle">
+                <div class="tgl">
+                    <div id="mapholder"></div>
+                </div>
+            </div>
             
 
 
@@ -138,7 +142,41 @@
             <p>2020 por alunos 4N-1 UNIVESP Louveira.</p>
           </div>
 
-          
+        <script>
+            <script type="text/javascript">
+02.
+jQuery.fn.toggleText = function(a,b) {
+03.
+return   this.html(this.html().replace(new RegExp("("+a+"|"+b+")"),function(x){return(x==a)?b:a;}));
+04.
+}
+05.
+ 
+06.
+$(document).ready(function(){
+07.
+$('.tgl').before('<span>Revelar conteúdo</span>');
+08.
+$('.tgl').css('display', 'none')
+09.
+$('span', '#box-toggle').click(function() {
+10.
+$(this).next().slideToggle('slow')
+11.
+.siblings('.tgl:visible').slideToggle('fast');
+12.
+// aqui começa o funcionamento do plugin
+13.
+$(this).toggleText('Revelar','Esconder')
+14.
+.siblings('span').next('.tgl:visible').prev()
+15.
+.toggleText('Revelar','Esconder')
+16.
+});
+17.
+})
+        </script>  
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

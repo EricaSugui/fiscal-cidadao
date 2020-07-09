@@ -2,7 +2,7 @@
     font-family: 'Nunito Sans';
     box-sizing: border-box;
   }
-  img,
+  /* img,
     object,
     embed {
     width: 100%;
@@ -11,7 +11,7 @@
       left: 0;
       bottom: 90px;
       background-repeat: no-repeat;
-  }
+  } */
   @media screen and (max-width: 369px) {
     * {
       font-family: 'Nunito Sans';
@@ -35,34 +35,29 @@
       text-align: center;
     }
     .index-container {
-      position:fixed;
+      /* position:fixed; */
       width: 100vw;
       padding-top: 20px;
-      padding-bottom: 0px;
-      /* padding-bottom: 60px; */
+      /* padding-bottom: 0px; */
       margin: 0 auto;
       text-align: center;
     }
     img,
     object,
     embed {
-    width: 100vw;
+      width: 70vw; 
       position: fixed;
       bottom: 53px;
       background-repeat: no-repeat;
     }
     
-    .photo {
-      /* width: 50%; */
-      background-image: url('/img/undraw_photos_1nui.png');
-      /* margin: auto; */
-    }
     .photo-map {
       margin: 10px;
     }
     #mapholder {
-      width: 320px;
+      width: 300px;
       height: 350px;
+      justify-content: center;
     }
     #jsCpf {
       width: 250px;
@@ -82,6 +77,7 @@
     }
     h2.subtitle {
       margin-top: 5px;
+      font-size: 20px;
     }
     .numberGuesser {
       display: none;
@@ -163,6 +159,21 @@
       }
       .tile-6 {
         background-color: #F5C62E;
+      }
+      .photo-map1 {
+        margin: 0 22px 20px 0;
+        color: white;
+        font-size: 18px;
+      }
+      .photo-map2 {
+        margin: 0 0px 20px 0;
+        color: white;
+        font-size: 18px;
+      }
+      .descreva {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
       }
   
     .guess input {
@@ -352,6 +363,7 @@
     }
     h2.subtitle {
       margin-top: 15px;
+      font-size: 20px;
     }
     .numberGuesser {
       display: none;
@@ -414,12 +426,6 @@
       align-items: center;
       justify-content: flex-start;
     }
-  
-    /* #computer-guess {
-      font-size: 50px;
-      font-weight: 700;
-      color: white;
-    } */
     .tile-0 {
       background-color: #490A3D;
       color: white;
@@ -441,6 +447,21 @@
       }
       .tile-6 {
         background-color: #F5C62E;
+      }
+      .photo-map1 {
+        color: white;
+        margin: 0 37px 20px 0;
+        font-size: 20px;
+      }
+      .photo-map2 {
+        color: white;
+        margin: 0 0 20px 0;
+        font-size: 20px;
+      }
+      .descreva {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
       }
   
     .guess input {
@@ -575,14 +596,48 @@
       margin: 0 auto;
       background-color: #fff;
     }
-  
+    .index-container {
+      width: 100vw;
+      padding-top: 20px;
+      padding-bottom: 0px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    img,
+    object,
+    embed {
+    width: 100%;
+    max-height: 250px;
+      position: fixed;
+      left: 0;
+      bottom: 90px;
+      /* background-repeat: no-repeat; */
+    }
+    .tile-0 {
+      display: block;
+      background-color: #490A3D;
+      color: white;
+    }
+    .descreva {
+      display: flex;
+      flex-direction: column;
+    }
     .game-container {
       max-width: 640px;
       margin: 0 auto;
       text-align: center;
     }
-    .photo-map {
-      margin: 10px;
+    .photo-map1 {
+      margin: 0 40px 30px 0px;
+      padding: 30px;
+      color: white;
+      font-size: 20px;
+    }
+    .photo-map2 {
+      margin: 0 0px 30px 40px;
+      padding: 30px;
+      color: white;
+      font-size: 20px;
     }
     #mapholder {
       width: 640px;
